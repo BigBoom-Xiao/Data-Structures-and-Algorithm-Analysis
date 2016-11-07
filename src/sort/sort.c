@@ -1,12 +1,12 @@
 /*
- * bucketsort.c
- *   桶排序
+ * sort.c
+ *
  *  Created on: 2016年11月7日
  *      Author: Dabao
  */
-#include <stdio.h>
-
-int main() {
+#include "sort.h"
+//桶排序
+void bucketsort() {
 	int book[1001],i,j,t,n;
 	for (i = 0; i <= 1000; i++) {
 		book[i] = 0; // 初始化“桶”
@@ -21,5 +21,4 @@ int main() {
 			 printf("%d ",i);
 		 }
 	}
-	return 0;
 }
