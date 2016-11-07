@@ -4,7 +4,9 @@
  *  Created on: 2016年11月7日
  *      Author: Dabao
  */
+#include <stdio.h>
 #include "sort.h"
+
 //桶排序
 void bucketsort() {
 	int book[1001],i,j,t,n;
@@ -20,5 +22,26 @@ void bucketsort() {
 		 for(j=1;j<=book[i];j++){  //出现了几次就将桶的编号打印几次
 			 printf("%d ",i);
 		 }
+	}
+}
+
+//冒泡排序
+void bubblesort(){
+	int a[100],i,j,t,n;
+	scanf("%d",&n); //接收排序数组长度
+	for (i = 0; i < n; i++) {
+		scanf("%d",&a[i]);
+	}
+	for (i = 0; i < n-1; i++) {
+		for (j = 0; j < n-i-1; j++) {
+			if(a[j] < a[j+1]){
+				t = a[j];
+				a[j] = a[j+1];
+				a[j+1] = t;
+			}
+		}
+	}
+	for (i = 0; i < n; i++) {
+		printf("%d ",a[i]);
 	}
 }
