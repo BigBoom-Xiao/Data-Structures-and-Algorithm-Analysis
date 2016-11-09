@@ -45,3 +45,8 @@ void bubblesort(){
 		printf("%d ",a[i]);
 	}
 }
+
+//快速排序
+void quicksort(){
+
+}
