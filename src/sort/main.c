@@ -7,6 +7,6 @@
 #include "sort.h"
 
 int main(){
-	bubblesort();
+	bucketsort();
 	return 0;
 }
