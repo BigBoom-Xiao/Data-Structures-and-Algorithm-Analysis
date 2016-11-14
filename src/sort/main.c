@@ -7,6 +7,6 @@
 #include "sort.h"
 
 int main(){
-	bucketsort();
+	quicksort();
 	return 0;
 }

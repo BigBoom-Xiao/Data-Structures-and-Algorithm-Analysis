@@ -10,6 +10,7 @@
 void bucketsort();
 void bubblesort();
 void quicksort();
+void quicksortimple(int left,int right);
 
 
 #endif /* SRC_SORT_SORT_H_ */
